@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora de caída libre</title>
+    <link rel="stylesheet" href="assets/styles/global.css">
+  </head>
+  <body>
+    <h1 class="titulo">Proyecto fisica</h1>
+
+    <iframe src="components/encabezado.html" width="100%" height="700px" frameborder="0"></iframe>
+
+    <h1 class="titulo">Calculadora de caída libre</h1>
+    <p class="tituloForm">Ingresa los siguientes valores:</p>
+    <form>
+      <label for="altura">Altura inicial (metros):</label>
+      <input type="number" id="altura" required><br><br>
+      <label for="gravedad">Aceleración gravitacional (m/s²):</label>
+      <input type="number" id="gravedad" value="9.81" required><br><br>
+      <div class="buttoms">
+        <button type="button" onclick="calcular()">Calcular</button>
+        <button type="button" onclick="limpiarFormulario()">Limpiar formulario</button>
+      </div>
+    </form>
+    <br>
+
+    <div id="resultadoOperacion">
+        <p>El tiempo que tarda en caer es:</p>
+        <div id="tiempo" class="valorRetorno"></div>
+        <p>La velocidad final es:</p>
+        <div id="velocidad" class="valorRetorno"></div>
+        <p>La aceleración alcanzada es:</p>
+        <div id="aceleracion" class="valorRetorno"></div>
+    </div>
+    <div>
+      <h4>Desarrollado por --- 2023</h4>
+    </div>
+  </body>
+  <script src="assets/scripts/index.js"></script>
+</html>
+
+<style>
+
+  p, label {
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form {
+    padding-left: 520px;
+  }
+
+  .tituloForm {
+    padding-left: 320px;
+  }
+
+  p {
+    padding-left: 320px;
+  }
+
+  .valorRetorno {
+    padding-left: 320px;
+    font-size: larger;
+  }
+
+  h4 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .buttoms {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+</style>

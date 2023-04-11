@@ -1,0 +1,31 @@
+body {
+    background-color: #ebdbb3;
+}
+
+.titulo {
+    color: #e97808;
+    font-size: 36px;
+    text-align: center;
+}
+
+input[type="number"] {
+    border: 1px solid #C0C0C0; /* borde gris claro */
+    padding: 10px; /* espacio dentro del campo de entrada */
+    background-color: #FFFFFF; /* color de fondo blanco */
+}
+  
+button {
+    border: none; /* sin borde */
+    padding: 10px 20px; /* espacio dentro del botón */
+    background-color: #e9a208; /* color de fondo verde */
+    color: #1a1c21; /* color de letra blanco */
+    font-weight: bold; /* texto en negrita */
+    cursor: pointer; /* cursor de mano al pasar por encima */
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+#resultadoOperacion {
+    display: none;
+    margin-bottom: 50px;
+}
